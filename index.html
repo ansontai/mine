@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>踩地雷</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>踩地雷</h1>
+  <div class="controls">
+    <label>列: <input id="rows" type="number" value="10" min="5" max="30"></label>
+    <label>欄: <input id="cols" type="number" value="10" min="5" max="30"></label>
+    <label>地雷: <input id="mines" type="number" value="15" min="1" max="500"></label>
+    <button id="reset">開始 / 重設</button>
+    <span id="flags">旗子: 0</span>
+    <span id="timer">時間: 0s</span>
+  </div>
+  <div id="board" class="board"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

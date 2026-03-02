@@ -1,0 +1,15 @@
+:root{--cell-size:32px;--gap:4px}
+*{box-sizing:border-box;font-family:Segoe UI,system-ui,Arial}
+body{padding:16px;background:#f3f4f6;color:#111}
+h1{margin:0 0 12px}
+.controls{display:flex;gap:12px;align-items:center;margin-bottom:12px;flex-wrap:wrap}
+input[type=number]{width:64px}
+#board{display:grid;gap:4px}
+.cell{width:var(--cell-size);height:var(--cell-size);display:flex;align-items:center;justify-content:center;background:#d1d5db;border-radius:4px;cursor:pointer;user-select:none;font-weight:600}
+.cell.revealed{background:#e9eef6;color:#0b57a4;cursor:default}
+.cell.mine{background:#f87171;color:#fff}
+.cell.flag{background:#fde68a}
+.info{margin-left:8px}
+.board.small .cell{width:28px;height:28px}
+.controls button{padding:6px 10px;border-radius:6px;border:1px solid #cbd5e1;background:#fff;cursor:pointer}
+.controls button:hover{background:#f8fafc}
